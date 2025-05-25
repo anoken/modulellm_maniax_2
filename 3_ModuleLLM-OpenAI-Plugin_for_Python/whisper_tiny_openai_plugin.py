@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# Copyright (c) 2025 aNoken
+
 import requests
 
 def speech_to_text(file_path, model="whisper-tiny", language="ja"):
