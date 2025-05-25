@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# Copyright (c) 2025 aNoken
+
 import requests  # HTTPリクエストを送るためのライブラリ
 import json      # JSONデータの整形・表示用
 
