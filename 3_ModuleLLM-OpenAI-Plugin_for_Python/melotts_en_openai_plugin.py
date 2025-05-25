@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# Copyright (c) 2025 aNoken
+
 import requests
 
 def text_to_speech(text, model="melotts-en-us", voice="alloy", output_file="test_voice.mp3"):
