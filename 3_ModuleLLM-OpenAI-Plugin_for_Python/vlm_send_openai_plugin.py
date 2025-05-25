@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# Copyright (c) 2025 aNoken
+
 import requests
 import json
 import base64
