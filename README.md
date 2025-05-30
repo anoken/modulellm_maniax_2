@@ -18,27 +18,6 @@
 Module-LLMは、Module-LLM MAniaX第1巻の発行以降、M5StackとAXERAがツールの整備に取り組んでおり、より一層使いやすい環境が整いました。本書では、新しくリリースされた開発ツールの解説を行います。
 また、筆者がModule-LLMを使っていく中で見出したテクニックやM5Stackの新商品に導入が企画されているAIチップAX650の情報などを盛り込んでいます。<br>
 
-### 本書の特徴
-
-本書は、以下の特徴を持つModule-LLMの実践的ガイドです：
-
-- **ModuleLLM-OpenAI-Pluginの解説**：最新のStackFlowを用いて、LLM、VLM、音声合成、音声認識などの機能を簡単に利用する方法を解説
-- **Pythonでの実装例**：OpenAI-PluginをPythonから呼び出すコード例を紹介
-- **Linuxカーネルビルドガイド**：Module-LLMのLinuxカーネルをカスタマイズしてビルドする方法を実践的に解説
-- **M5Stack連携**：M5Stack CoreS3SEをディスプレイとして活用する方法を解説
-- **最新AIチップAX650N評価**：次世代AIチップAX650Nを先取り検証し、AX630Cとのパフォーマンス比較結果を公開
-
-### 対象読者
-
-本書は以下の方に適しています：
-
-- EdgeAI（エッジAI）に興味がある方
-- M5Stackや組み込みデバイスでAIを活用したい方
-- 大規模言語モデル（LLM）やマルチモーダルAIを実際のプロダクトに組み込みたい開発者
-- Module-LLM MAniaX第1巻の読者で、さらに知識を深めたい方
-- 最新のEdgeAIチップや技術トレンドに興味がある方
-
-本書とModule-LLMを通じて、エッジで動作するAI「EdgeAI」の可能性を、ぜひあなた自身の手で体験してください。<br>
 
 ### 本リポジトリについて
 
@@ -49,10 +28,18 @@ Module-LLMは、Module-LLM MAniaX第1巻の発行以降、M5StackとAXERAがツ�
 ## 改定履歴
 ・v1.0.0版発行: 2025年6月1日 本文87ページ<br>
 
+
+## 本書の特徴
+
+本書は、以下の特徴を持つModule-LLMの実践的ガイドです：
+
+- **ModuleLLM-OpenAI-Pluginの解説**：最新のStackFlowを用いて、LLM、VLM、音声合成、音声認識などの機能を簡単に利用する方法を解説
+- **Pythonでの実装例**：OpenAI-PluginをPythonから呼び出すコード例を紹介
+- **Linuxカーネルビルドガイド**：Module-LLMのLinuxカーネルをカスタマイズしてビルドする方法を実践的に解説
+- **M5Stack連携**：M5Stack CoreS3SEをディスプレイとして活用する方法を解説
+- **最新AIチップAX650N評価**：次世代AIチップAX650Nを先取り検証し、AX630Cとのパフォーマンス比較結果を公開
+- 
 ## 目次<br>
-
-
-# 目次<br>
 
 ## 第1章 Module-LLMの使い方<br>
 1.1 Module-LLMとは？<br>
