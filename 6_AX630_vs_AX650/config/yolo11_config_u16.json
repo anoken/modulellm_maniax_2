@@ -1,0 +1,45 @@
+{
+ "model_type": "ONNX", 
+
+ "npu_mode": "NPU1", 
+  // NPUモード:AX620Eの場合はNPU1/NPU2,AX650の場合はNPU1/NPU2/NPU3
+
+ "target_hardware": "AX620E",  
+  // ターゲットハードウェア(AX650Nの場合はAX650、AX630Cの場合はAX620E)
+
+ "input": "yolo11n-cut.onnx",  // 入力モデルのファイルパス
+ "output_dir": "yolo11n",      // コンパイル結果の出力ディレクトリ
+ "output_name": "yolo11n-cut.axmodel",  // 出力モデルのファイル名
+
+  "quant": {
+    "input_configs": [
+      {
+        "tensor_name": "DEFAULT",
+        "calibration_dataset": "./dataset/calib_image.tar.gz",
+        "calibration_size": 20,
+        "calibration_mean": [0, 0, 0],
+        "calibration_std": [255.0, 255.0, 255.0]
+      }
+    ],
+      "layer_configs": [
+        {
+          "start_tensor_names": ["DEFAULT"],
+          "end_tensor_names": ["DEFAULT"],
+          "data_type": "U16"	
+　　　//16ビット量子化の場合はU16、8ビット量子化の場合はU8
+        },
+        ],
+    "calibration_method": "MinMax",
+    "precision_analysis": true,
+    "precision_analysis_method":"EndToEnd"
+  },
+  "input_processors": [
+    {
+      "tensor_name": "DEFAULT",
+      "tensor_format": "RGB",
+      "src_format": "BGR",
+      "src_dtype": "U8",
+      "src_layout": "NHWC"
+    }
+  ],
+}
