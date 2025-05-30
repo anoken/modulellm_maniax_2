@@ -34,13 +34,12 @@ https://techbookfest.org/product/17LUY8GPcPXNpzXGj6FnfH<br>
 
  
 ## 目次<br>
-
-## 第1章 Module-LLMの使い方<br>
-## 第2章 OpenAI-Pluginを使ってみよう<br>
-## 第3章 OpenAI-PluginをPythonで使う<br>
-## 第4章 Linuxカーネルをビルドしよう<br>
-## 第5章 M5Stackをディスプレイにしよう<br>
-## 第6章 AX650Nを先取り検証<br>
+ * 第1章 Module-LLMの使い方<br>
+ * 第2章 OpenAI-Pluginを使ってみよう<br>
+ * 第3章 OpenAI-PluginをPythonで使う<br>
+ * 第4章 Linuxカーネルをビルドしよう<br>
+ * 第5章 M5Stackをディスプレイにしよう<br>
+ * 第6章 AX650Nを先取り検証<br>
 
 
 <br>
