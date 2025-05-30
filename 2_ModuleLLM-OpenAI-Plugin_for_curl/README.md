@@ -6,8 +6,6 @@
 
 StackFlowはModule LLMでAIモデルを実行するためのフレームワークです。このフォルダ内のスクリプトは、OpenAI API互換エンドポイントを使用してModule LLMのさまざまな機能にアクセスするためのサンプルを提供します。
 
-modulellm-tutorial：
-https://modulellm-tutorial.readthedocs.io/en/latest/Quickstart.html
 
 ## 含まれるスクリプト
 
