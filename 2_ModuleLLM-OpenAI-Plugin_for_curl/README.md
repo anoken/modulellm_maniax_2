@@ -1,11 +1,8 @@
-# Module LLM OpenAI Plugin Shell Scripts
+# 第2章 OpenAI-Pluginを使ってみよう
 
-このフォルダには、Module LLM-StackFlowをOpenAI Plugin を使い、OpenAI API互換インターフェースを通じて呼び出すためのcurlスクリプトが含まれています。
 
 ## 概要
-
-StackFlowはModule LLMでAIモデルを実行するためのフレームワークです。このフォルダ内のスクリプトは、OpenAI API互換エンドポイントを使用してModule LLMのさまざまな機能にアクセスするためのサンプルを提供します。
-
+このフォルダには、Module LLM-StackFlowをOpenAI Plugin を使い、OpenAI API互換インターフェースを通じて呼び出すためのcurlスクリプトが含まれています。
 
 ## 含まれるスクリプト
 
