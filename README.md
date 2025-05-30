@@ -23,6 +23,9 @@ Module-LLMは、Module-LLM MAniaX第1巻の発行以降、M5StackとAXERAがツ�
 
 このリポジトリには、本書で解説されているサンプルコードやスクリプトが含まれています。各ディレクトリは、書籍の各章に対応しています。本書と合わせてご利用ください。
 
+技術書典18/Module-LLM MAniaX Ⅱ：<br>
+https://techbookfest.org/product/17LUY8GPcPXNpzXGj6FnfH<br>
+
 
 
 ## 改定履歴
