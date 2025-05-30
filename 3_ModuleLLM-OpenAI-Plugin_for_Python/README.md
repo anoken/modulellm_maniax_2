@@ -6,9 +6,6 @@
 
 StackFlowはModule LLMでAIモデルを実行するためのフレームワークです。このフォルダ内のスクリプトは、OpenAI API互換エンドポイントを使用してModule LLMのさまざまな機能にアクセスするためのPythonサンプルを提供します。
 
-modulellm-tutorial：
-https://modulellm-tutorial.readthedocs.io/en/latest/Quickstart.html
-
 ## 含まれるスクリプト
 
 - `llm_send_openai_plugin.py` - テキスト生成のためのLLMモデルにリクエストを送信
