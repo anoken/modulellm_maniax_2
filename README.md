@@ -1,5 +1,7 @@
 # ModuleLLM_MAniaX Ⅱ
 
+[README_日本語](README.md)|[README_English](README_en.md)
+
 「ModuleLLM_MAniaX Ⅱ 」のサポートページです。<br>
 
 ![image](https://github.com/user-attachments/assets/ad730a38-efad-4238-ae96-7fe404b409cf)
