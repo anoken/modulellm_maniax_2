@@ -1,6 +1,6 @@
 # ModuleLLM_MAniaX Ⅱ
 
-[README_日本語](README.md)|[README_English](README_en.md)
+[README_日本語](README.md) | [README_English](README_en.md)
 
 「ModuleLLM_MAniaX Ⅱ 」のサポートページです。<br>
 
