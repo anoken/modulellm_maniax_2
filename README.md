@@ -35,7 +35,7 @@ Module-LLMは、Module-LLM MAniaX第1巻の発行以降、M5StackとAXERAがツ�
 
 - **ModuleLLM-OpenAI-Pluginの解説**：最新のStackFlowを用いて、LLM、VLM、音声合成、音声認識などの機能を簡単に利用する方法を解説
 - **Pythonでの実装例**：OpenAI-PluginをPythonから呼び出すコード例を紹介
-- **Linuxカーネルビルドガイド**：Module-LLMのLinuxカーネルをカスタマイズしてビルドする方法を実践的に解説
+- **Linuxカーネルビルドガイド**：Module-LLMのLinuxカーネルをカスタマイズしてビルドする方法を紹介
 - **M5Stack連携**：M5Stack CoreS3SEをディスプレイとして活用する方法を解説
 - **最新AIチップAX650N評価**：次世代AIチップAX650Nを先取り検証し、AX630Cとのパフォーマンス比較結果を公開
 - 
