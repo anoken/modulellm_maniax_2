@@ -1,20 +1,16 @@
-# Module LLM OpenAI Plugin Python スクリプト
+# 第3章 OpenAI-PluginをPythonで使う
 
-このフォルダには、Module LLM-StackFlowをOpenAI Pluginを使い、OpenAI API互換インターフェースを通じて呼び出すためのPythonスクリプトが含まれています。
 
 ## 概要
-
-StackFlowはModule LLMでAIモデルを実行するためのフレームワークです。このフォルダ内のスクリプトは、OpenAI API互換エンドポイントを使用してModule LLMのさまざまな機能にアクセスするためのPythonサンプルを提供します。
+このフォルダには、Module LLM-StackFlowをOpenAI Pluginを使い、OpenAI API互換インターフェースを通じて呼び出すためのPythonスクリプトが含まれています。
 
 ## 含まれるスクリプト
-
 - `llm_send_openai_plugin.py` - テキスト生成のためのLLMモデルにリクエストを送信
 - `vlm_send_openai_plugin.py` - 画像認識と説明のためのVision Language Modelにリクエストを送信
 - `whisper_tiny_openai_plugin.py` - 音声からテキストへの変換（Whisper互換）
 - `melotts_en_openai_plugin.py` - テキストから音声への変換（英語）
 
 ## 前提条件
-
 - Python 3.7以上
 - requestsライブラリ（`pip install requests`）
 - 実行中のModule LLMサーバー（デフォルトでは`http://localhost:8000`）
