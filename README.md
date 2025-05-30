@@ -28,7 +28,8 @@ Module-LLMは、Module-LLM MAniaX第1巻の発行以降、M5StackとAXERAがツ�
 技術書典18/Module-LLM MAniaX Ⅱ：<br>
 https://techbookfest.org/product/17LUY8GPcPXNpzXGj6FnfH<br>
 
-
+BOOTH/Module-LLM MAniaX Ⅱ：<br>
+https://anoken.booth.pm/items/6986171<br>
 
 ## 改定履歴
 ・v1.0.0版発行: 2025年6月1日 本文87ページ<br>
