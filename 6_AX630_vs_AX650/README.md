@@ -76,42 +76,33 @@ Dockerコンテナ内でpulsar2コマンドを使用してモデルを変換し�
 
 ### AX630C向けの変換例
 
-**8ビット量子化版の生成**
 ```bash
+## 8ビット量子化版の生成
+
 root@pulsar2:/data# pulsar2 build --config config/yolo11_config_u8.json --target_hardware AX620E --npu_mode NPU1 --input yolo11n-cut.onnx --output_name yolo11n_u8_AX620E_NPU1.axmodel
-
 root@pulsar2:/data# pulsar2 build --config config/yolo11_config_u8.json --target_hardware AX620E --npu_mode NPU2 --input yolo11n-cut.onnx --output_name yolo11n_u8_AX620E_NPU2.axmodel
-```
 
-**16ビット量子化版の生成**
-```bash
+## 16ビット量子化版の生成
 root@pulsar2:/data# pulsar2 build --config config/yolo11_config_u16.json --target_hardware AX620E --npu_mode NPU1 --input yolo11n-cut.onnx --output_name yolo11n_u16_AX620E_NPU1.axmodel
-
 root@pulsar2:/data# pulsar2 build --config config/yolo11_config_u16.json --target_hardware AX620E --npu_mode NPU2 --input yolo11n-cut.onnx --output_name yolo11n_u16_AX620E_NPU2.axmodel
 ```
 
 ### AX650N向けの変換例
 
-**8ビット量子化版の生成**
+
 ```bash
+## 8ビット量子化版の生成
 root@pulsar2:/data# pulsar2 build --config config/yolo11_config_u8.json --target_hardware AX650 --npu_mode NPU1 --input yolo11n-cut.onnx --output_name yolo11n_u8_AX650_NPU1.axmodel
-
 root@pulsar2:/data# pulsar2 build --config config/yolo11_config_u8.json --target_hardware AX650 --npu_mode NPU2 --input yolo11n-cut.onnx --output_name yolo11n_u8_AX650_NPU2.axmodel
-
 root@pulsar2:/data# pulsar2 build --config config/yolo11_config_u8.json --target_hardware AX650 --npu_mode NPU3 --input yolo11n-cut.onnx --output_name yolo11n_u8_AX650_NPU3.axmodel```
 
-**16ビット量子化版の生成**
-```bash
+## 16ビット量子化版の生成
 root@pulsar2:/data# pulsar2 build --config config/yolo11_config_u16.json --target_hardware AX650 --npu_mode NPU1 --input yolo11n-cut.onnx --output_name yolo11n_u16_AX650_NPU1.axmodel
-
 root@pulsar2:/data# pulsar2 build --config config/yolo11_config_u16.json --target_hardware AX650 --npu_mode NPU2 --input yolo11n-cut.onnx --output_name yolo11n_u16_AX650_NPU2.axmodel
-
 root@pulsar2:/data# pulsar2 build --config config/yolo11_config_u16.json --target_hardware AX650 --npu_mode NPU3 --input yolo11n-cut.onnx --output_name yolo11n_u16_AX650_NPU3.axmodel
 ```
 
-
-
-## 参考リソース
+## 参考リンク
 
 Pulsar2コンパイラの詳細情報とダウンロードについては、以下のリンクをご参照ください：
 - Pulsar2 docs:https://pulsar2-docs.readthedocs.io/zh-cn/latest/index.html
