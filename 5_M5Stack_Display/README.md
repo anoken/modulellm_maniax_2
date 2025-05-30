@@ -62,34 +62,6 @@ root@m5stack-LLM:~# pip install opencv-python pyserial
 root@m5stack-LLM:~# python3 video_send.py
 ```
 
-## 技術詳細
-
-### M5Stack側のコード（main.cpp）
-
-M5Stack側のコードは以下の機能を提供します：
-
-- UARTシリアル通信（2Mbps）の初期化
-- 受信データからヘッダー情報の解析
-- JPEGデータの受信と表示
-- エラーハンドリングとログ表示
-
-UART通信は以下の設定で動作します：
-- ポート: UART_NUM_2（M5Stack CoreS3SEのPort-C）
-- ボーレート: 2,000,000 bps
-- データビット: 8ビット
-- パリティ: なし
-- ストップビット: 1ビット
-
-### Module-LLM側のスクリプト（video_send.py）
-
-`video_send.py`スクリプトは以下の機能を提供します：
-
-- 指定した動画ファイル（デフォルト: BadApple.mp4）を読み込み
-- フレームを320x240サイズにリサイズ
-- JPEG圧縮を適用
-- シリアル通信を通じてM5Stackに送信
-- 各フレームごとに適切なヘッダー情報を付加
-
 ## パラメータのカスタマイズ
 
 `send_video_serial`関数では以下のパラメータを調整できます：
