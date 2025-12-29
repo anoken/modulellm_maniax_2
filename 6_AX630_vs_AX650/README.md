@@ -101,6 +101,30 @@ root@pulsar2:/data# pulsar2 build --config config/yolo11_config_u16.json --targe
 root@pulsar2:/data# pulsar2 build --config config/yolo11_config_u16.json --target_hardware AX650 --npu_mode NPU2 --input yolo11n-cut.onnx --output_name yolo11n_u16_AX650_NPU2.axmodel
 root@pulsar2:/data# pulsar2 build --config config/yolo11_config_u16.json --target_hardware AX650 --npu_mode NPU3 --input yolo11n-cut.onnx --output_name yolo11n_u16_AX650_NPU3.axmodel
 ```
+## AX650N NPU対応オペレータ一覧
+
+AX650N NPUがサポートするONNXオペレーターのリストで、合計88のオペレーターがあります。
+ドキュメントによると、これらの演算子はONNX opset_version >= 11をサポートしています。演算子によっては制約を設けている場合がありますので、詳細はPulsar2のドキュメントを参照してください。
+
+[https://pulsar2-docs.readthedocs.io/zh-cn/stable/appendix/op_support_list_ax650.html]
+
+| カテゴリ | オペレーター数 | オペレーター一覧（⭐ = AX650Nのみ対応） |
+|----------|----------------|------------------|
+| 基本的な算術演算子 | 7 | Add, Sub, Mul, Div, Max, Min, Pow |
+| 活性化関数 | 14 | Relu, Sigmoid, Tanh, LeakyRelu, Elu, Gelu, HardSigmoid, HardSwish, Softmax, ⭐LogSoftmax, Softplus, PRelu, Mish, Silu, Swish |
+| 正規化層 | 4 | BatchNormalization, LayerNormalization, InstanceNormalization, ⭐GroupNorm |
+| 畳み込み・プーリング演算 | 6 | Conv, ConvTranspose, AveragePool, MaxPool, GlobalAveragePool, GlobalMaxPool |
+| 削減演算 | 5 | ReduceSum, ReduceMean, ReduceMax, ⭐ReduceMin, ReduceL2 |
+| 形状操作 | 7 | Reshape, Transpose, Squeeze, Unsqueeze, Flatten, DepthToSpace, SpaceToDepth |
+| 比較演算子 | 5 | Equal, Greater, GreaterOrEqual, Less, LessOrEqual |
+| 論理演算子 | 3 | ⭐And, ⭐Not, ⭐Xor |
+| 数学関数 | 8 | Abs, Sqrt, Exp, Sin, ⭐Cos, Ceil, ⭐Floor, Erf |
+| データ操作・選択 | 9 | Gather, ⭐GatherElements, ⭐GatherND, Split, Concat, Slice, TopK, ArgMax, ArgMin |
+| 定数・変換 | 5 | Constant, ConstantOfShape, Cast, Identity, Expand |
+| 特殊演算 | 11 | Where, LSTM, Pad, Clip, GridSample, Resize, ⭐RoiAlign, SpatialTransformer, MatMul, Gemm, ⭐Tile |
+| 散布演算 | 2 | ⭐Scatter, ⭐ScatterND |
+
+⭐がついているものは、AX630Cでは対応していないのでモデル変換ができませんが、AX650Nでは対応しているオペレーターになります。
 
 ## 参考リンク
 
