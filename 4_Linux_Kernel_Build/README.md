@@ -109,6 +109,44 @@ Ubuntu-PC$ ls
 M5_LLM_ubuntu22.04_20250521.axp 
 ```
 
+
+## カスタム設定の適用
+
+ビルド設定をカスタマイズする場合は、以下の手順で行います：
+creat_Module_LLM_buidlroot_image.shに make menuconfigを追加します。
+
+参考：
+https://github.com/nnn112358/LLM_buildroot-external-m5stack/blob/main/tools/creat_Module_LLM_buidlroot_image.sh
+
+```bash
+$ vi ./creat_Module_LLM_buidlroot_image.sh
+```
+
+```
+make_buildroot() {
+    cd buildroot
+    make BR2_EXTERNAL=../../.. m5stack_module_llm_4_19_defconfig
+    
+    # menuconfigを実行
+    make menuconfig
+    
+    [[ -v ROOTFS_SIZE ]] && sed -i 's/^\(BR2_TARGET_ROOTFS_EXT2_SIZE=\).*$/\1"'"${ROOTFS_SIZE}"'"/' .config
+    make -j `nproc`
+}
+```
+
+menuconfig画面では、以下のような項目を設定できます：
+
+- Target options：ターゲットアーキテクチャの設定
+- Build options：ビルドオプションの設定
+- Toolchain：ツールチェーンの設定
+- System configuration：システム設定
+- Target packages：必要なパッケージの選択
+- Filesystem images：ファイルシステムイメージの設定
+
+outputディレクトリにaxpファイルが生成されます。
+
+
 ## ALSAマイクの問題について
 
 M5StackがリリースしているModule-LLMのファームウェアでは、ALSAドライバー経由でマイクからの音声を録音すると、量子化ビット数が16bitの設定のときのみ、音声データにノイズが載る現象が発生しました。
