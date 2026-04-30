@@ -25,8 +25,8 @@
         {
           "start_tensor_names": ["DEFAULT"],
           "end_tensor_names": ["DEFAULT"],
-          "data_type": "U16"	
-　　　//16ビット量子化の場合はU16、8ビット量子化の場合はU8
+          "data_type": "U16"
+          //16ビット量子化の場合はU16、8ビット量子化の場合はU8
         },
         ],
     "calibration_method": "MinMax",
